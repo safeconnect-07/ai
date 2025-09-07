@@ -1,13 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
     <title>AI Code Review & Bug Prediction Tool</title>
+    <meta name="title" content="AI Code Review & Bug Prediction Tool">
+    <meta name="description" content="An intelligent tool that analyzes code to detect bugs, vulnerabilities, and bad practices. It suggests improvements using AI and visualizes code quality metrics on a comprehensive dashboard.">
+    <meta name="keywords" content="AI code review, bug prediction, code analysis, static analysis, Gemini API, React, code quality, developer tool">
+    <meta name="author" content="A world-class senior frontend engineer">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AI Code Review & Bug Prediction Tool">
+    <meta property="og:description" content="An intelligent tool that analyzes code to detect bugs, vulnerabilities, and bad practices, powered by the Gemini API.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="AI Code Review & Bug Prediction Tool">
+    <meta property="twitter:description" content="An intelligent tool that analyzes code to detect bugs, vulnerabilities, and bad practices, powered by the Gemini API.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "react/": "https://aistudiocdn.com/react@^19.1.1/",
@@ -18,9 +35,37 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
-</head>
+    <style>
+      /* Simple style for the noscript message */
+      .noscript-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 2rem;
+        text-align: center;
+        color: #e2e8f0; /* slate-200 */
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      }
+      .noscript-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      .noscript-text {
+        color: #94a3b8; /* slate-400 */
+        max-width: 500px;
+      }
+    </style>
+  </head>
   <body class="bg-slate-900">
+    <noscript>
+      <div class="noscript-container">
+        <h1 class="noscript-title">JavaScript is Required</h1>
+        <p class="noscript-text">This is an interactive web application that requires JavaScript to be enabled. Please enable it in your browser settings and refresh the page to use the AI Code Review Tool.</p>
+      </div>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
