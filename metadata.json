@@ -1,0 +1,5 @@
+{
+  "name": "AI Code Review & Bug Prediction Tool",
+  "description": "An intelligent tool that analyzes code to detect bugs, vulnerabilities, and bad practices. It suggests improvements using AI and visualizes code quality metrics on a comprehensive dashboard.",
+  "requestFramePermissions": []
+}
